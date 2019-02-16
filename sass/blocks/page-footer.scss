@@ -1,0 +1,120 @@
+.page-footer {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 17px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.page-footer__items {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+}
+
+.page-footer__item {
+  width: 280px;
+  padding: 22px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: #444444;
+  border-bottom: 1px solid #d9d9d9;
+
+  &:last-child {
+    border: none;
+  }
+}
+
+.page-footer__socials {
+  width: 125px;
+  margin: 0 auto;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+.page-footer__social-link {
+  &:hover .page-footer__html-academy-icon,
+  &:hover .page-footer__social-icon {
+    fill: #68b738;
+  }
+
+  &:hover[href] .page-footer__logo {
+    fill: #3e3e3e;
+  }
+
+  &:active .page-footer__html-academy-icon,
+  &:active .page-footer__social-icon {
+    fill: #c8e0ba;
+  }
+
+  &:active[href] .page-footer__logo {
+    fill: #6b6b6b;
+  }
+}
+
+.page-footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-footer__html-academy-icon {
+  vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+  .page-footer {
+    width: 768px;
+    padding: 0 30px 35px;
+  }
+
+  .page-footer__items {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__item {
+    width: 160px;
+    padding: 18px 0;
+    text-align: left;
+    border: none;
+  }
+
+  .page-footer__socials {
+    width: 160px;
+  }
+
+  .page-footer__social-icon {
+    transform: scale(1.4);
+  }
+}
+
+@media (min-width: 1440px) {
+  .page-footer {
+    width: 1440px;
+    padding: 30px 110px 35px;
+  }
+
+  .page-footer__socials {
+    width: 120px;
+    justify-content: space-between;
+  }
+}

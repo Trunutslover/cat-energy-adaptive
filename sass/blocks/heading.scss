@@ -1,0 +1,125 @@
+.heading {
+  width: 320px;
+  min-height: 453px;
+  margin: 0 auto;
+  padding-top: 27px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: url("../img/heading__bg--mobile.jpg") no-repeat 50% 0;
+}
+
+.heading__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.heading__description {
+  margin: 0;
+  margin-bottom: auto;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.heading__choose-program {
+  display: block;
+  margin: 0 auto;
+  width: 280px;
+  height: 40px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: none;
+  color: #ffffff;
+  background-color: #68b738;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: #8fc46e;
+  }
+}
+
+.heading__image {
+  position: absolute;
+  bottom: 43px;
+  left: calc(50% - 140px);
+}
+
+@media (min-width: 768px) {
+  .heading {
+    width: 768px;
+    min-height: 843px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 33px;
+    padding-left: 119px;
+    padding-right: 119px;
+    background: url("../../img/heading__bg--tablet.jpg") no-repeat 50% 100%;
+  }
+
+  .heading__title {
+    margin-bottom: 41px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: #000000;
+  }
+
+  .heading__description {
+    margin-bottom: 48px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: #000000;
+  }
+
+  .heading__choose-program {
+    margin: 0;
+    width: 245px;
+    height: 52px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .heading__image {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .heading {
+    width: 1440px;
+    min-height: 527px;
+    padding-top: 53px;
+    padding-left: 190px;
+    padding-right: 790px;
+    background: none;
+  }
+
+  .heading__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .heading__description {
+    margin-bottom: 53px;
+  }
+}

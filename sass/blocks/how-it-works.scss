@@ -1,0 +1,133 @@
+.how-it-works {
+  width: 320px;
+  margin: 0 auto;
+  padding: 17px 20px 22px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.how-it-works__title {
+  margin: 0;
+  margin-bottom: 28px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 60px;
+}
+
+.how-it-works__items {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.how-it-works__item {
+  padding-top: 2px;
+  padding-bottom: 2px;
+
+  &:nth-child(1) {
+     background: url("../img/how-it-works__bg-1--mobile.png") no-repeat 0 0;
+  }
+
+  &:nth-child(2) {
+    background: url("../img/how-it-works__bg-2--mobile.png") no-repeat 0 0;
+  }
+
+  &:nth-child(3) {
+    background: url("../img/how-it-works__bg-3--mobile.png") no-repeat 0 0;
+  }
+
+  &:nth-child(4) {
+    background: url("../img/how-it-works__bg-4--mobile.png") no-repeat 0 0;
+  }
+}
+
+.how-it-works__description {
+  margin: 0;
+  margin-bottom: 22px;
+  padding-left: 80px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+@media (min-width: 768px) {
+  .how-it-works {
+    width: 768px;
+    padding: 45px 30px 29px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .how-it-works__title {
+    margin-bottom: 72px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .how-it-works__items {
+    padding-right: 84px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .how-it-works__item {
+    width: 240px;
+    padding-top: 112px;
+    padding-bottom: 51px;
+
+    &:nth-child(1) {
+      margin-bottom: 60px;
+      background: url("../img/how-it-works__bg-1--tablet.png") no-repeat 0 0,
+                  url("../img/how-it-works__bg-number-1--tablet.png") no-repeat calc(100% - 43px) 0;
+    }
+
+    &:nth-child(2) {
+      background: url("../img/how-it-works__bg-2--tablet.png") no-repeat 0 0,
+                  url("../img/how-it-works__bg-number-2--tablet.png") no-repeat calc(100% - 4px) 0;
+    }
+
+    &:nth-child(3) {
+      background: url("../img/how-it-works__bg-3--tablet.png") no-repeat 0 0,
+                  url("../img/how-it-works__bg-number-3--tablet.png") no-repeat calc(100% - 3px) 0;
+    }
+
+    &:nth-child(4) {
+      background: url("../img/how-it-works__bg-4--tablet.png") no-repeat 0 0,
+                  url("../img/how-it-works__bg-number-4--tablet.png") no-repeat calc(100% - 0px) 0;
+    }
+  }
+
+  .how-it-works__description {
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .how-it-works {
+    width: 1440px;
+    padding: 43px 110px 10px;
+    border: none;
+  }
+
+  .how-it-works__items {
+    padding-right: 4px;
+  }
+
+  .how-it-works__item {
+    margin-bottom: 0;
+    padding-bottom: 50px;
+
+    &:first-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .how-it-works__description {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}

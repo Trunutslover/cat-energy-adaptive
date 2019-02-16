@@ -16,9 +16,19 @@ gulp.task("html-copy", function () {
         .pipe(gulp.dest("build/"));
 });
 
+gulp.task("fonts-copy", function () {
+    return gulp.src("fonts/*.*", {since: gulp.lastRun("fonts-copy")})
+        .pipe(gulp.dest("build/fonts/"));
+});
+
+gulp.task("scripts-copy", function () {
+    return gulp.src("js/**/*.js", {since: gulp.lastRun("scripts-copy")})
+        .pipe(gulp.dest("build/js/"));
+});
+
 gulp.task("styles", function () {
     return gulp.src("sass/style.scss")
-        .pipe(sass())
+        .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest("build/css/"));
 });
 
@@ -39,11 +49,13 @@ gulp.task("imagemin", function () {
 });
 
 gulp.task("build", gulp.series("clean",
-    gulp.parallel("styles", "html-copy", "imagemin")));
+    gulp.parallel("styles", "html-copy", "fonts-copy", "scripts-copy", "imagemin")));
 
 gulp.task("watch", function () {
-    gulp.watch("sass/**/*.*", gulp.series("styles"));
+    gulp.watch("sass/**/*.scss", gulp.series("styles"));
     gulp.watch("*.html", gulp.series("html-copy"));
+    gulp.watch("fonts/*.*", gulp.series("fonts-copy"));
+    gulp.watch("js/**/*.js", gulp.series("scripts-copy"));
     gulp.watch("img/**/*.*", gulp.series("imagemin"));
 });
 

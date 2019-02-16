@@ -1,0 +1,96 @@
+.contacts {
+  width: 320px;
+  margin: 0 auto;
+  padding: 29px 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.contacts__invitation {
+  width: 320px;
+  padding: 0 20px 0 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__title {
+  width: 80%;
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.contacts__adress {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+}
+
+@media (min-width: 768px) {
+  .contacts {
+    width: 768px;
+    padding: 31px 0;
+  }
+
+  .contacts__invitation {
+    width: 768px;
+    padding: 0 70px;
+  }
+
+  .contacts__title {
+    width: 160px;
+    margin-bottom: 59px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .contacts__adress {
+    width: 170px;
+    font-size: 16px;
+    text-align: right;
+  }
+
+  .contacts__map {
+    width: 768px;
+    height: 396px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .contacts {
+    width: 1440px;
+    padding: 0;
+    position: relative;
+  }
+
+  .contacts__invitation {
+    width: 570px;
+    padding: 65px 76px 60px;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    background-color: #ffffff;
+  }
+
+  .contacts__title {
+    margin-bottom: 0;
+  }
+
+  .contacts__adress {
+    text-align: left;
+  }
+
+  .contacts__map {
+    width: 1440px;
+    height: 400px;
+  }
+}

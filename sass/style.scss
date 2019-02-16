@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'),
+  url('../fonts/oswald-v16-latin_cyrillic-regular.woff2') format('woff2'),
+  url('../fonts/oswald-v16-latin_cyrillic-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Oswald Medium'), local('Oswald-Medium'),
+  url('../fonts/oswald-v16-latin_cyrillic-500.woff2') format('woff2'),
+  url('../fonts/oswald-v16-latin_cyrillic-500.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Oswald Bold'), local('Oswald-Bold'),
+  url('../fonts/oswald-v16-latin_cyrillic-700.woff2') format('woff2'),
+  url('../fonts/oswald-v16-latin_cyrillic-700.woff') format('woff');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/heading.scss";
+@import "blocks/select.scss";
+@import "blocks/how-it-works.scss";
+@import "blocks/example.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-footer.scss";
