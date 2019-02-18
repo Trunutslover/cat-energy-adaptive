@@ -31,14 +31,6 @@ body {
   font-family: "Arial", sans-serif;
 }
 
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/heading.scss";
@@ -47,3 +39,14 @@ body {
 @import "blocks/example.scss";
 @import "blocks/contacts.scss";
 @import "blocks/page-footer.scss";
+@import "blocks/catalog.scss";
+@import "blocks/add-goods.scss";
+@import "blocks/form.scss";
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}

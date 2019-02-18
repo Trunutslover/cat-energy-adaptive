@@ -52,7 +52,7 @@ gulp.task("build", gulp.series("clean",
     gulp.parallel("styles", "html-copy", "fonts-copy", "scripts-copy", "imagemin")));
 
 gulp.task("watch", function () {
-    gulp.watch("sass/**/*.scss", gulp.series("styles"));
+    gulp.watch(["sass/*.scss", "sass/blocks/*.scss"], gulp.series("styles"));
     gulp.watch("*.html", gulp.series("html-copy"));
     gulp.watch("fonts/*.*", gulp.series("fonts-copy"));
     gulp.watch("js/**/*.js", gulp.series("scripts-copy"));

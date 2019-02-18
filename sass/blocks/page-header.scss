@@ -1,3 +1,32 @@
+.page-header__title {
+  width: 320px;
+  margin: 0 auto;
+  padding: 15px 20px 28px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 60px;
+  border-bottom: 1px solid #ededed;
+}
+
+.page-header--program > .page-header__title {
+  padding-bottom: 26px;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .page-header__title {
+    width: 768px;
+    padding: 33px 30px 25px;
+    font-size: 60px;
+    line-height: 60px;
+    border: none;
+  }
+}
+
 @media (min-width: 1440px) {
   .page-header {
     width: 1440px;
@@ -5,5 +34,14 @@
     background:
             url("../img/heading__bg--desktop.png") no-repeat 63% 72%,
             url("../img/page-header__bg--desktop.jpg") no-repeat 100% 0;
+  }
+
+  .page-header--inner {
+    background: none;
+  }
+
+  .page-header__title {
+    width: 1440px;
+    padding: 19px 110px 25px;
   }
 }
